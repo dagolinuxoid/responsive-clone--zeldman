@@ -186,7 +186,6 @@ p {
   color: #dddcd8;
   clear: both;
   padding: 1.333em 0.618em;
-  /*margin: 0 auto!important;*/
 }
 
 .resources-board__widget {
@@ -204,6 +203,7 @@ p {
 .resources-board__credits a {
   color: #f60;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .dashboard {
