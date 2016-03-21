@@ -7,6 +7,9 @@
   src: url("http://wac.6a25.edgecastcdn.net/006A25/webtype/ff/3/21497750-aff6-421b-bcbe-c81814674967") format("woff");
 }
 
+@font-face{font-family:"ITC Franklin Condensed";src:url(http://wac.6a25.edgecastcdn.net/006A25/webtype/ff/3/dd601484-8d27-4b0c-8581-ad6a2f77df50) format("woff");font-style:normal;font-weight:400
+}
+
 * {
   box-sizing: border-box; /* HACK: Is it okay to use * to set box-sizing?! */
 }
@@ -39,6 +42,7 @@ p {
   font-family: "ITC Franklin Condensed";
   line-height: 1.1;
   text-transform: uppercase;
+  font-weight: 700;
   color: #222;
   margin: 0 0 .618em;
   word-wrap: break-word;
@@ -46,6 +50,7 @@ p {
 
 .post__entry-title--branch {
   font-family: "ITC Franklin Condensed";
+  font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
   color: #222;
@@ -57,6 +62,7 @@ p {
 
 .post__entry-title--opus {  /* HACK: third!! ROFL "nice" copy-paste  */
   font-family: "ITC Franklin Condensed";
+  font-weight: 700;
   line-height: 1.1;
   text-transform: uppercase;
   color: #222;
@@ -192,6 +198,7 @@ p {
   padding-top: 0;
   padding-bottom: 0;
   margin: 0;
+  font-weight: 400;
 }
 
 .resources-board__credits a {
@@ -203,7 +210,8 @@ p {
   font-size: 1.666em;
   text-transform: none;
   line-height: 1.2;
-  font-family: 'ITC Franklin Condensed', sans-serif;;
+  font-family: 'ITC Franklin Condensed', sans-serif;
+  font-weight: 700;
 }
 
 .sidebar-bottom__primary {
@@ -230,6 +238,7 @@ p {
   font-size: 32px;
   text-align: center;
   font-family: 'ITC Franklin Condensed', sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
