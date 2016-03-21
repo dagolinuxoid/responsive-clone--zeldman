@@ -1,0 +1,321 @@
+@import "reset.css";
+
+@font-face {
+  font-family: "ITC Franklin Condensed";
+  font-style: normal;
+  font-weight: 700;
+  src: url("http://wac.6a25.edgecastcdn.net/006A25/webtype/ff/3/21497750-aff6-421b-bcbe-c81814674967") format("woff");
+}
+
+* {
+  box-sizing: border-box; /* HACK: Is it okay to use * to set box-sizing?! */
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.618;
+  font-family: Georgia;
+  background: #f9f8f3;
+}
+
+article {
+  margin-bottom: 2.618em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.post {
+  margin-bottom: 0;
+}
+
+.post__entry-content p a:nth-child(2) { /* HACK: ahaha, look at this declaration...*/
+  font-style: italic; 
+}
+
+.post__entry-title {
+  font-family: "ITC Franklin Condensed";
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #222;
+  margin: 0 0 .618em;
+  word-wrap: break-word;
+}
+
+.post__entry-title--branch {
+  font-family: "ITC Franklin Condensed";
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #222;
+  margin: 0 0 .618em;
+  word-wrap: break-word;
+  font-size: 2.618em;
+  text-align: center;
+}
+
+.post__entry-title--opus {  /* HACK: third!! ROFL "nice" copy-paste  */
+  font-family: "ITC Franklin Condensed";
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #222;
+  margin-top: 75px;
+  margin-bottom: 17.999px;
+  font-size: 1.618em;
+  word-wrap: break-word;
+}
+
+.headline {
+  width: 100%;
+  background: #000;
+  border-top: 12px solid #f60;
+}
+
+.headline__wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.headline__title {
+  font-family: Georgia,serif;
+  line-height: 1;
+  margin: 0;
+  font-size: 4em;
+}
+
+.headline__screenshot {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+} 
+
+.content-area {
+  max-width: 768px;
+  margin: 3.054em auto;
+  margin-bottom: 0;
+}
+
+.post__entry-meta {
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+.post__entry-meta::before {
+  content: '';
+  display: inline-block;
+  width: 26px;
+  height: 15px;
+  margin: 0 0 -2px;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.3 12.7" enable-background="new 0 0 16.3 12.7" xml:space="preserve"><g><path fill="#CC3300" d="M10.3,8.2c0.2-0.2,0.2-0.3,0.1-0.4c0-0.1-0.3-0.1-0.5-0.1c-0.5,0.1-1.7,0-2.4-0.2C6.8,7.2,6.3,6.7,6.1,5.9C5.9,5.5,5.9,5.4,5.9,5.3c0.1-0.1,0.2,0,0.6,0.1c0.4,0.1,0.6,0.1,0.6,0c0.1,0,0.1-0.4-0.1-1.3C6.9,3.5,7.6,2.4,8.1,2.6C8.3,2.7,8.3,2.9,8.3,4c0,0.1,0,0.3,0.1,0.3c0.1,0,0.3,0,0.5-0.1c0,0,0.3-0.1,0.3-0.1c0.1,0,0.1,0.1,0,0.5c0,0.5,0.1,1.1,0.3,1.6c0.3,0.5,0.5,0.7,0.9,0.7c0.4,0,0.7-0.6,0.8-1.2c0.1-0.5,0.1-1.4,0-1.8C11.1,3.4,11,2.9,11,2.3c0-0.6,0.5-1,0.8-1c0.3,0,0.4,0.1,0.7,0.3c0.2,0.1,0.4,0.1,0.6,0c0,0,0.1-0.3,0.1-0.4c0-0.1-0.1-0.4-0.1-0.7C13,0.3,13.2,0,13.5,0c0.2,0,0.4,0.3,0.6,0.5c0.2,0.4,0.3,1.2,0.1,1.8c-0.1,0.2,0,0.4,0.1,0.6c0.1,0.1,0.4,0.1,0.7,0c0.2-0.1,0.4-0.1,0.6,0c0.2,0.2,0.2,0.7-0.3,1.8c-0.3,0.7-0.9,1-1.6,1.2c-0.6,0.2-1,0.4-1.4,0.7c-0.6,0.3-0.9,0.7-0.9,1c0,0.4,0.5,0.6,0.9,0.6c0.6,0,1-0.3,1.3-0.6c0.1-0.1,0.2-0.1,0.3-0.1c0.1,0,0.1,0.1,0.1,0.3c0,0.2,0,0.3,0.1,0.4c0.2,0,0.3,0,0.5-0.1c0.1-0.1,0.6-0.8,0.8-1c0.3-0.2,0.6-0.2,0.9,0c0.2,0.3,0,0.7-0.2,0.9c-0.2,0.1-0.8,0.4-1.1,0.6c-0.3,0.1-0.3,0.2-0.3,0.3c0,0.2,0.3,0.4,0.5,0.5c0.4,0,0.5,0.1,0.5,0.2c0,0.1,0,0.3-0.1,0.4c-0.4,0.5-1.3,1-2.2,1c-1.2,0-1.9-1.1-2.3-1.9c-0.1-0.1-0.2-0.2-0.2-0.2c0,0-0.2,0-0.2,0.1L10,9.2C9.8,9.4,9.8,9.5,9.8,9.6c0,0,0.1,0.2,0.2,0.3c0.2,0.2,0.6,0.8,0.6,1.5c0,0.6-0.5,1.2-1.1,1.2c-0.7,0-1.2-0.4-1.5-0.9l0.4-0.2c0.3,0.4,0.6,0.6,1,0.6c0.2,0,0.6-0.3,0.6-0.8c0-0.4-0.1-0.8-0.4-1.1C9.5,10.1,9.3,10,9.2,10c0,0-0.2,0-0.3,0.1c-1.1,1-3.3,2.1-5,2.1c-2.4,0-4-2.3-3.9-3.6C0.1,7.5,1,6.9,2,7c0.8,0,1.4,0.6,1.4,1.3c0,0.8-0.6,1.4-1.2,1.4c-0.3,0-0.5,0-0.7-0.2c-0.1-0.1-0.3-0.1-0.3,0c0,0-0.2,0.2-0.1,0.3c0,0.3,0.6,0.9,1.2,1.2C2.4,11,2.6,11,2.7,11c0.2,0,0.4-0.2,0.6-0.4c0.6-0.8,1.8-1.8,3.2-2.1c0.9-0.2,1.8,0,2.4,0.5C9,9,9.1,9.1,9.3,9.1c0,0,0.2-0.1,0.2-0.2L10.3,8.2z M6.2,9.4c-0.9,0.5-1.3,1.1-1.7,1.4c-0.3,0.4-0.4,0.6-0.2,0.7c0,0.1,0.2,0.1,0.4,0c0.6-0.2,1.5-0.5,2.1-0.8c0.5-0.2,1.6-0.9,1.7-1c0.2-0.1,0.2-0.2,0.2-0.3c0-0.1-0.1-0.2-0.4-0.3C7.6,9,6.8,9,6.2,9.4z"/></g></svg>');
+}
+
+.post__spacer {
+  margin-right: 1em;
+}
+
+.regular-link {
+  display: block;
+}
+
+.regular-link--strong {
+  text-decoration: none;
+  font-weight: 700;
+  /*background: 0 0;*/
+  color: #c30;
+}
+
+.regular-link--strong:hover {
+    color: #f60;
+}
+
+.post__entry-title {
+  font-size: 4em;
+  text-align: center;
+}
+
+.post__entry-content img {
+  width: 100%;
+  border-radius: 1.25em;
+  margin-bottom: 2em;
+}
+
+.post__entry-content p {
+  font-size: 1.333em;
+}
+
+.post__entry-content li {
+  font-size: 1.333em;
+  list-style-type: square;
+  margin-bottom: 1em;
+}
+
+.post__entry-content ul {
+  padding-left: 40px;
+}
+
+.nav-links {
+  text-align: left;
+  display: block;
+  margin: 25px auto 50px;
+  font: 24px/36px Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.nav-links__previous {
+  margin-bottom: 1em;
+}
+
+.nav-links__transform {
+  display: block;
+  text-transform: none;
+  font: 18px/36px Georgia, serif;
+}
+
+.resources-board {
+  border-bottom: 12px solid #09f;
+  background: #000;
+  color: #dddcd8;
+  clear: both;
+  padding: 1.333em 0.618em;
+  /*margin: 0 auto!important;*/
+}
+
+.resources-board__widget {
+  margin: 0 0 1.5em;
+}
+
+.resources-board__credits {
+  padding: 0.618em;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.resources-board__credits a {
+  color: #f60;
+  text-decoration: none;
+}
+
+.dashboard {
+  font-size: 1.666em;
+  text-transform: none;
+  line-height: 1.2;
+  font-family: 'ITC Franklin Condensed', sans-serif;;
+}
+
+.sidebar-bottom__primary {
+  display: inline-block;
+  width: 50%;
+  padding: 18px 0.5em 50px;
+  vertical-align: top;
+  min-height: 450px;
+  float: left;
+  background: #fff;
+}
+
+.sidebar-bottom__widget {
+  margin: auto;
+  color: #333;
+  font: 24px/1.6 Georgia, serif;
+  text-align: center;
+}
+
+.widget-title {
+  margin-top: 0;
+  line-height: 1.2em;
+  margin-bottom: 0.25em;
+  font-size: 32px;
+  text-align: center;
+  font-family: 'ITC Franklin Condensed', sans-serif;
+  text-transform: uppercase;
+}
+
+.text-widget {
+  margin: 0 20px;
+}
+
+img.ad {
+  border: 0;
+  padding: 3px 0 0;
+  margin: 18px auto;
+  height: 90px;
+  display: block;
+}
+
+p.ads {
+  font-size: 18px;
+  margin: 0 0 1em;
+}
+
+p.ads a {
+  color: #555;
+  text-decoration: none;
+}
+
+p.ads a:hover {
+  color: #f60;
+}
+
+.theme {
+  background: #ecebe7; /* HACK: oh boy... */
+}
+
+.job {
+  font-size: 18px;
+}
+
+.job a {
+  color: #555;
+  text-decoration: none;
+}
+
+.job a:hover {
+  color: #f60;
+}
+
+.resources-board__credits a:hover{
+  color: #cf0;
+}
+
+
+
+
+
+/*                                      *\
+Oh gosh, keep this as a separate file...
+\*                                      */
+
+
+@media screen and (max-width: 768px) {
+  .post {
+    max-width: 90%;
+    margin: 1.054em auto 0;
+  }
+  .content-area{
+    margin:1em auto 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+  .post__entry-title {
+    font-size: 2.618em;
+  }
+  .headline__screenshot {
+    margin: 9.708px 0; /* HACK: pew pew ... */
+  }
+  .headline {
+    font-size: 4px; /* HACK: LOL */
+  }
+  .sidebar-bottom__primary {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+  }
+}
